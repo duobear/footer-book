@@ -8,8 +8,8 @@ process.chdir("./" + dirName) // cd $1
 fs.mkdirSync('css') // mkdir css
 fs.mkdirSync('js') // mkdir js
 
-fs.writeFileSync("./index.html", "")
-fs.writeFileSync("css/style.css", "")
-fs.writeFileSync("./js/main.js", "")
+fs.writeFileSync("./index.html", "<!DOCTYPE><title>Hello</title><h1>Hi</h1>")
+fs.writeFileSync("css/style.css", "h1{color: red;}")
+fs.writeFileSync("./js/main.js", "var string=Hello world; alert(string)")
 
 process.exit(0)
